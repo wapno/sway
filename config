@@ -1,4 +1,4 @@
-# Default config for sway
+# Default config for sway - Edited to fit my own needs.
 #
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
@@ -84,8 +84,10 @@ input <1:1:AT_Translated_Set_2_keyboard> xkb_model "pc105"
     bindsym XF86MonBrightnessDown exec 'light -U 10'
 
     # Lock Screen, kill display
-    bindsym $mod+p exec 'swaylock -i ~/Pictures/6896227.jpg -k -s fill -f -c 000000'
-
+     
+    set $lock exec bash ~/.config/sway/lock.sh
+    bindsym $mod+p exec $lock
+    
     # alt(mod) tab laaaal
     bindsym $mod+tab focus right 
     bindsym $mod+Shift+tab focus left
