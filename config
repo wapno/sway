@@ -7,7 +7,6 @@
 # general
 
 exec_always swaymsg "default_border none"
-for_window [app_id="google-chrome"] inhibit_idle fullscreen
 
 ### Variables
 #
