@@ -4,6 +4,10 @@
 #
 # Read `man 5 sway` for a complete reference.
 
+# general
+
+exec_always swaymsg "default_border none"
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -96,7 +100,7 @@ input <1:1:AT_Translated_Set_2_keyboard> xkb_model "pc105"
     bindsym $mod+g exec dolphin
 
     # Grimshot Sshots
-    bindsym $mod+Shift+s exec grimshot save area
+    bindsym Print exec grimshot save area
 
     # Start a terminal
     bindsym $mod+Return exec $term
