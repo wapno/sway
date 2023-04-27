@@ -41,10 +41,10 @@ output * bg ~/Pictures/6896227.jpg fill
 #
 # Example configuration:
 #
- exec swayidle -w \
-          timeout 300 'swaylock -i ~/Pictures/6896227.jpg -k -s fill -f -c 000000' \
-          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-          before-sleep 'swaylock -i ~/Pictures/6896227.jpg -k -s fill -f -c 000000'
+exec swayidle -w \
+         timeout 300 'swaylock -i ~/Pictures/6896227.jpg -k -s fill -f -c 000000' \
+         timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+         before-sleep 'swaylock -i ~/Pictures/6896227.jpg -k -s fill -f -c 000000'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
